@@ -1,0 +1,23 @@
+{
+  "name": "notas",
+  "version": "1.0.0",
+  "description": "api notas con realm de mongodb y express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Realm",
+    "MongoDB"
+  ],
+  "author": "yusseth12@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "realm": "^11.5.1"
+  }
+}
