@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "709262ac-8a7a-40cd-b1d3-f05b04b5e980",
+		"name": "Notas Realm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11252734"
+	},
+	"item": [
+		{
+			"name": "Listar Notas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "user_id",
+						"value": "2"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/notas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear nota",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Nota1\",\n    \"content\": \"Consulta veterinario\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/notas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener nota",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/notas/641209a88ac4b01b619f9ebf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notas",
+						"641209a88ac4b01b619f9ebf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar nota",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Nota1\",\n    \"content\": \"consulta veterinario Katrina\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/notas/64121f798ac4b01b61a508be",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notas",
+						"64121f798ac4b01b61a508be"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Nota",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/notas/64121f798ac4b01b61a508be",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notas",
+						"64121f798ac4b01b61a508be"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
